@@ -1,0 +1,89 @@
+﻿<section>
+
+				<div class="page-header">
+
+					<h1>Other Services</h1>
+                    <div class="container-fluid"> 
+				
+                    <div class="row-fluid">
+                   
+                        <div class="span2">
+                            <!--Sidebar content-->
+                            <ul class="nav nav-list bs-docs-sidenav">
+                                <!--<li class="nav-header">
+									Services Menu
+								</li> -->
+                                <li>
+                                    <a href="#firstlink" id="first_link">Confidential Personalized Service</a>
+                                </li>
+                                <li>
+                                    <a href="#secondlink" id="second_link">CaseManagers & Doctors</a>
+                                </li>
+                                <li>
+                                    <a href="#thirdlink" id="third_link">Getting a Quote</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="span10">
+                            <!--Body content-->
+                            <div id="accordion">
+                                <ul>
+                                    <li id="first">
+                                        <!-- <h1>Confidential Personalized Service</h1>  -->
+                                        <p>
+                                            We pledge confidentiality because we know it is critical to you.		
+												To insure your confidentiality:
+                                        </p>
+                                        <ul>
+                                            <li>There is no reference to any medication or illness on your packaging.</li>
+                                            <li>The packaging will contain no advertising messages.</li>
+                                            <li>Your name, address, and prescription information are never made available to anyone.</li>
+                                            <li>We never sell or rent any patient information.</li>
+                                            <li>We only discuss information about you with your doctor or your insurance company.</li>
+                                        </ul>
+                                    </li>
+                                    <li id="second">
+                                        <!-- <h1>CaseManagers & Doctors</h1> -->
+                                        <p>
+                                            MedExpress: More than just a pharmacy!	
+		               						We do more than just mail medications to our patients. We are participants in the healthcare management process working with our patient's case managers and doctors.	
+		               						
+		               						Adherence is critical to healthcare management!	
+                                        </p>
+                                        <ul>
+                                            <li>MedExpress calls each person every month to make sure that all refills are sent on time and to talk to our patient about any questions they may have.</li>
+                                            <li>MedExpress calls the doctors when refills are expiring so that:</li>
+                                            <li>Medications will not be interrupted.</li>
+                                            <li>We are immediately aware of any changes in medication regimens.</li>
+                                            <li>If necessary, we can serve as the liaison between the doctor and our patients, often reminding them that they need to visit their doctor.</li>
+                                            <li>MedExpress does ALL of the insurance paperwork, relieving both the patients and their case managers of this daunting activity.</li>
+                                            <li>If a case manager needs regular communication from MedExpress, we will provide it.</li>
+                                        </ul>
+                                        <p>
+                                            All that we do achieves multiple goals:	
+                                        </p>
+                                        <ul>
+                                            <li>Higher adherence levels for our patients.</li>
+                                            <li>Less work for case managers.</li>
+                                        </ul>
+                                        <p>
+                                            MedExpress Pharmacy has a proactive approach regarding the medication process and our services have been recognized for their quality by several case management resources across the country.
+											The bottom line is: We don’t help just our patients; We help case managers by relieving them of some of their ever increasing work load!	
+											Contact us to find out how we can help you and your patients!
+                                        </p>
+                                    </li>
+                                    <li id="third">
+                                        <!-- <h1>Getting a Quote</h1> -->
+                                        <p>
+                                            Please fill the Enrollment form, our customer support representative will follow up with you.
+                                        </p>
+                                    </li>
+
+                                </ul>
+                            </div>
+                        </div>
+                    </div> 
+			 </div> 
+				<br />
+                    </div>                
+			</section>

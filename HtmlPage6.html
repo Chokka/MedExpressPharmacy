@@ -1,0 +1,431 @@
+﻿
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>MedExpressPharmacy</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <!-- Le styles -->
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link href="css/bootstrap-responsive.css" rel="stylesheet">
+    <link href="css/docs.css" rel="stylesheet">
+    <link href="js/google-code-prettify/prettify.css" rel="stylesheet">
+
+    <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+      <script src="assets/js/html5shiv.js"></script>
+    <![endif]-->
+
+    <!-- Le fav and touch icons -->
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="ico/apple-touch-icon-144-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="ico/apple-touch-icon-114-precomposed.png">
+      <link rel="apple-touch-icon-precomposed" sizes="72x72" href="ico/apple-touch-icon-72-precomposed.png">
+                    <link rel="apple-touch-icon-precomposed" href="ico/apple-touch-icon-57-precomposed.png">
+                                   <link rel="shortcut icon" href="ico/favicon.png">
+
+    <script type="text/javascript">
+        var _gaq = _gaq || [];
+        _gaq.push(['_setAccount', 'UA-146052-10']);
+        _gaq.push(['_trackPageview']);
+        (function () {
+            var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+            ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+            var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+        })();
+    </script>
+  </head>
+
+  <body data-spy="scroll" data-target=".bs-docs-sidebar">
+
+    <!-- Navbar
+    ================================================== -->
+   <!-- <div class="navbar navbar-inverse navbar-fixed-top">
+      <div class="navbar-inner">
+        <div class="container">
+          <button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="brand" href="./index.html">Bootstrap</a>
+          <div class="nav-collapse collapse">
+            <ul class="nav">
+              <li class="">
+                <a href="./index.html">Home</a>
+              </li>
+              <li class="">
+                <a href="./getting-started.html">Get started</a>
+              </li>
+              <li class="">
+                <a href="./scaffolding.html">Scaffolding</a>
+              </li>
+              <li class="active">
+                <a href="./base-css.html">Base CSS</a>
+              </li>
+              <li class="">
+                <a href="./components.html">Components</a>
+              </li>
+              <li class="">
+                <a href="./javascript.html">JavaScript</a>
+              </li>
+              <li class="">
+                <a href="./customize.html">Customize</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div> -->
+
+      <div class="navbar navbar-inverse navbar-fixed-top"> 
+      	<div class="navbar-inner">
+				<div class="container">
+					<a class="btn btn-navbar" data-toggle ="collapse" data-target=".nav-collapse"> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </a>
+                    <a class="brand">MedExpress Pharmacy</a>
+					<div class="nav-collapse collapse">
+						<ul class="nav">
+							<li class="active">
+								<a href="javascript:void(0)" onClick="goToByScroll('1')">Home</a>
+							</li>
+							<li>
+								<a href="javascript:void(0)" onClick="goToByScroll('aboutus')">About Us</a>
+							</li>
+
+							<li class="dropdown">
+								<a href="#" class="dropdown-toggle" data-toggle="dropdown" onclick="goToByScroll('services')">Services<b class="caret"></b></a>
+								<ul class="dropdown-menu">
+									<li>
+                                        <!--<a href="javascript:void(0)" onClick="goToByScroll('software_development_scroll')">Questions & Answers</a> -->
+                                        <a href="javascript:void(0)" onClick="goToByScroll('Services_Questions_Answers')">Questions & Answers</a>
+									</li>
+									<li>
+										<a href="javascript:void(0)" onClick="goToByScroll('offshore_software_scroll')">Enrollment</a>
+									</li>
+                                    <!-- Syntax To add additional Sub Menu -->
+								    <!--	<li>
+									    	<a href="javascript:void(0)" onClick="goToByScroll('expert_software_scroll')">Expert Systems Development</a>
+									        </li>
+									        <li class="divider"></li>
+									        <li class="nav-header">
+										     Web Development
+									        </li>
+									        <li>
+										    <a href="javascript:void(0)" onClick="goToByScroll('web_design_scroll')">Web Desiging</a>
+									        </li>
+									        <li>
+										    <a href="javascript:void(0)" onClick="goToByScroll('web_programming_scroll')">Web Programming</a>
+									        </li>   -->
+								</ul>
+							</li>
+
+							<!-- <li>
+								<a href="javascript:void(0)" onClick="goToByScroll('menu1')">Menu 1</a>
+							</li> -->
+
+							<li>
+                                <a href="javascript:void(0)" onclick="goToByScroll('menu2')">Other Services</a>
+							</li>
+							<li>
+								<a href="javascript:void(0)" onClick="goToByScroll('contact_us_scroll')">Contact Us</a>
+							</li>
+						</ul>
+                       <!-- Employee Gmail Sign In Feature -->
+                       <!-- <form class="navbar-form pull-right">
+                            <input class="span2" type="text" placeholder="Email">
+                            <input class="span2" type="password" placeholder="Password">
+                            <button type="submit" class="btn">Sign in</button>
+                        </form> -->
+					</div><!--/.nav-collapse -->
+				</div>
+			</div>
+		</div>
+
+<!-- Subhead
+================================================== -->
+<header class="jumbotron subhead" id="overview">
+  <div class="container">
+    <h1>MedExpress Pharmacy</h1>
+    <p class="lead">more than a pharmacy</p>
+  </div>
+</header>
+
+
+  <div class="container">
+
+    <!-- Docs nav
+    ================================================== -->
+      <!--
+    <div class="row">
+      <div class="span3 bs-docs-sidebar">
+        <ul class="nav nav-list bs-docs-sidenav">
+          <li><a href="#confidential"><i class="icon-chevron-right"></i>Confidential Service</a></li>
+          <li><a href="#casemanagers"><i class="icon-chevron-right"></i>CaseManagers & Doctors</a></li>
+          <li><a href="#gettingaquote"><i class="icon-chevron-right"></i>Getting a Quote</a></li>
+        </ul>
+      </div>
+      <div class="span9">
+          -->
+                 
+
+                   <!-- Confidential Personalized Services
+            ================================================== -->
+          <!--
+           <section id="confidential">
+          
+               
+          <div class="page-header">
+            <h1>Confidential & Personalized Service</h1>
+          </div>
+          <p>We pledge confidentiality because we know it is critical to you.To insure your confidentiality:</p>
+                  <ul>
+                                            <li>There is no reference to any medication or illness on your packaging.</li>
+                                            <li>The packaging will contain no advertising messages.</li>
+                                            <li>Your name, address, and prescription information are never made available to anyone.</li>
+                                            <li>We never sell or rent any patient information.</li>
+                                            <li>We only discuss information about you with your doctor or your insurance company.</li>
+                   </ul>
+       
+          <hr class="bs-docs-separator">
+
+
+        </section>
+          -->
+           <!-- Case Managers & Doctors
+            ================================================== -->
+          <!--
+           <section id="casemanagers">
+          
+               
+          <div class="page-header">
+            <h1>Case Managers & Doctors</h1>
+          </div>
+
+                                        <p>
+                                            MedExpress: More than just a pharmacy!	
+		               						We do more than just mail medications to our patients. We are participants in the healthcare management process working with our patient's case managers and doctors.	
+		               						
+		               						Adherence is critical to healthcare management!	
+                                        </p>
+                                       
+                                         Background Color <pre class="prettyprint"></pre>
+                                        <ul>
+                                            
+                                            <li>MedExpress calls each person every month to make sure that all refills are sent on time and to talk to our patient about any questions they may have.</li>
+                                            <li>MedExpress calls the doctors when refills are expiring so that:</li>
+                                            <li>Medications will not be interrupted.</li>
+                                            <li>We are immediately aware of any changes in medication regimens.</li>
+                                            <li>If necessary, we can serve as the liaison between the doctor and our patients, often reminding them that they need to visit their doctor.</li>
+                                            <li>MedExpress does ALL of the insurance paperwork, relieving both the patients and their case managers of this daunting activity.</li>
+                                            <li>If a case manager needs regular communication from MedExpress, we will provide it.</li>
+                                        </ul>
+                                       
+                                        <p>
+                                            All that we do achieves multiple goals:	
+                                        </p>
+                                        <ul>
+                                            <li>Higher adherence levels for our patients.</li>
+                                            <li>Less work for case managers.</li>
+                                        </ul>
+                                        <p>
+                                            MedExpress Pharmacy has a proactive approach regarding the medication process and our services have been recognized for their quality by several case management resources across the country.
+											The bottom line is: We don’t help just our patients; We help case managers by relieving them of some of their ever increasing work load!	
+											Contact us to find out how we can help you and your patients!
+                                        </p>
+
+          <hr class="bs-docs-separator">
+
+
+        </section>
+        -->
+
+           <!-- Getting a Quote
+            ================================================== -->
+          
+          <!--
+           <section id="gettingaquote">
+          
+               
+          <div class="page-header">
+            <h1>Getting a Quote</h1>
+          </div>
+
+           <p>
+                                            Please fill the Enrollment form, our customer support representative will follow up with you.
+           </p>
+   
+
+           <hr class="bs-docs-separator"> 
+
+
+        </section> -->
+
+
+        
+          <!-- Start of the Menu 2========================================================-->
+
+        
+            <section>
+
+				<div class="page-header">
+                    <!--  -->
+					<h1>Other Services</h1>
+                    <div class="container-fluid"> 
+				
+                    <div class="row-fluid">
+                   
+                        <div class="span2">
+                            <!--Sidebar content-->
+                            <ul class="nav nav-list bs-docs-sidenav">
+                                <!--<li class="nav-header">
+									Services Menu
+								</li> -->
+                                <li>
+                                    <a href="#firstlink" id="first_link">Confidential Personalized Service</a>
+                                </li>
+                                <li>
+                                    <a href="#secondlink" id="second_link">CaseManagers & Doctors</a>
+                                </li>
+                                <li>
+                                    <a href="#thirdlink" id="third_link">Getting a Quote</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="span10">
+                            <!--Body content-->
+                            <div id="accordion">
+                                <ul>
+                                    <li id="first">
+                                        <!-- <h1>Confidential Personalized Service</h1>  -->
+                                        <p>
+                                            We pledge confidentiality because we know it is critical to you.		
+												To insure your confidentiality:
+                                        </p>
+                                        <ul>
+                                            <li>There is no reference to any medication or illness on your packaging.</li>
+                                            <li>The packaging will contain no advertising messages.</li>
+                                            <li>Your name, address, and prescription information are never made available to anyone.</li>
+                                            <li>We never sell or rent any patient information.</li>
+                                            <li>We only discuss information about you with your doctor or your insurance company.</li>
+                                        </ul>
+                                    </li>
+                                    <li id="second">
+                                        <!-- <h1>CaseManagers & Doctors</h1> -->
+                                        <p>
+                                            MedExpress: More than just a pharmacy!	
+		               						We do more than just mail medications to our patients. We are participants in the healthcare management process working with our patient's case managers and doctors.	
+		               						
+		               						Adherence is critical to healthcare management!	
+                                        </p>
+                                        <ul>
+                                            <li>MedExpress calls each person every month to make sure that all refills are sent on time and to talk to our patient about any questions they may have.</li>
+                                            <li>MedExpress calls the doctors when refills are expiring so that:</li>
+                                            <li>Medications will not be interrupted.</li>
+                                            <li>We are immediately aware of any changes in medication regimens.</li>
+                                            <li>If necessary, we can serve as the liaison between the doctor and our patients, often reminding them that they need to visit their doctor.</li>
+                                            <li>MedExpress does ALL of the insurance paperwork, relieving both the patients and their case managers of this daunting activity.</li>
+                                            <li>If a case manager needs regular communication from MedExpress, we will provide it.</li>
+                                        </ul>
+                                        <p>
+                                            All that we do achieves multiple goals:	
+                                        </p>
+                                        <ul>
+                                            <li>Higher adherence levels for our patients.</li>
+                                            <li>Less work for case managers.</li>
+                                        </ul>
+                                        <p>
+                                            MedExpress Pharmacy has a proactive approach regarding the medication process and our services have been recognized for their quality by several case management resources across the country.
+											The bottom line is: We don’t help just our patients; We help case managers by relieving them of some of their ever increasing work load!	
+											Contact us to find out how we can help you and your patients!
+                                        </p>
+                                    </li>
+                                    <li id="third">
+                                        <!-- <h1>Getting a Quote</h1> -->
+                                        <p>
+                                            Please fill the Enrollment form, our customer support representative will follow up with you.
+                                        </p>
+                                    </li>
+
+                                </ul>
+                            </div>
+                        </div>
+                    </div> 
+			 </div> 
+				<br />
+                    </div>                
+			</section>
+
+		
+
+
+      </div>
+   <!-- </div>
+
+  </div> -->
+
+
+
+    <!-- Footer
+    ================================================== -->
+    <footer class="footer">
+      <div class="container">
+      <!--  <p>Designed and built with all the love in the world by <a href="http://twitter.com/mdo" target="_blank">@mdo</a> and <a href="http://twitter.com/fat" target="_blank">@fat</a>.</p>
+        <p>Code licensed under <a href="http://www.apache.org/licenses/LICENSE-2.0" target="_blank">Apache License v2.0</a>, documentation under <a href="http://creativecommons.org/licenses/by/3.0/">CC BY 3.0</a>.</p>
+        <p><a href="http://glyphicons.com">Glyphicons Free</a> licensed under <a href="http://creativecommons.org/licenses/by/3.0/">CC BY 3.0</a>.</p>
+        <ul class="footer-links">
+          <li><a href="http://blog.getbootstrap.com">Blog</a></li>
+          <li class="muted">&middot;</li>
+          <li><a href="https://github.com/twitter/bootstrap/issues?state=open">Issues</a></li>
+          <li class="muted">&middot;</li>
+          <li><a href="https://github.com/twitter/bootstrap/blob/master/CHANGELOG.md">Changelog</a></li>
+        </ul> -->
+      </div>
+    </footer>
+
+
+
+    <!-- Le javascript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script type="text/javascript" src="http://platform.twitter.com/widgets.js"></script>
+    <script src="js/jquery.js"></script>
+    <script src="js/bootstrap-transition.js"></script>
+    <script src="js/bootstrap-alert.js"></script>
+    <script src="js/bootstrap-modal.js"></script>
+    <script src="js/bootstrap-dropdown.js"></script>
+    <script src="js/bootstrap-scrollspy.js"></script>
+    <script src="js/bootstrap-tab.js"></script>
+    <script src="js/bootstrap-tooltip.js"></script>
+    <script src="js/bootstrap-popover.js"></script>
+    <script src="js/bootstrap-button.js"></script>
+    <script src="js/bootstrap-collapse.js"></script>
+    <script src="js/bootstrap-carousel.js"></script>
+    <script src="js/bootstrap-typeahead.js"></script>
+    <script src="js/bootstrap-affix.js"></script>
+
+    <script src="js/holder/holder.js"></script>
+    <script src="js/google-code-prettify/prettify.js"></script>
+
+    <script src="js/application.js"></script>
+
+
+    <!-- Analytics
+    ================================================== -->
+    <script>
+        var _gauges = _gauges || [];
+        (function () {
+            var t = document.createElement('script');
+            t.type = 'text/javascript';
+            t.async = true;
+            t.id = 'gauges-tracker';
+            t.setAttribute('data-site-id', '4f0dc9fef5a1f55508000013');
+            t.src = '//secure.gaug.es/track.js';
+            var s = document.getElementsByTagName('script')[0];
+            s.parentNode.insertBefore(t, s);
+        })();
+    </script>
+
+  </body>
+</html>
