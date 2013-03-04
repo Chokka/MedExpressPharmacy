@@ -1,41 +1,13 @@
 ﻿<!DOCTYPE html>
 <html lang="en">
 <head>
-		<meta charset="utf-8">
-		<title>Home Page</title>
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<meta name="description" content="">
-		<meta name="author" content="">
-
-		<!-- Le styles -->
-		<link href="css/bootstrap.css" rel="stylesheet">
-		<style type="text/css">
-			body {
-				padding-top: 60px;
-				padding-bottom: 40px;
-			}
-
-			.sidebar-nav {
-				padding: 9px 0;
-			}
-		</style>
-
-		<script>
-		    function goToByScroll(id) {
-		        $('html,body').animate({
-		            scrollTop: $("#" + id).offset().top
-		        }, 'slow');
-		    }
-		</script>
-
-		<link href="css/bootstrap-responsive.css" rel="stylesheet">
-
-		<!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
-		<!--[if lt IE 9]>
-		<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
-		<![endif]-->
-
-	</head>
+<script src="http://code.jquery.com/jquery.min.js"></script>
+<link href="http://twitter.github.com/bootstrap/assets/css/bootstrap.css" rel="stylesheet" type="text/css" />
+<link href="http://twitter.github.com/bootstrap/assets/css/bootstrap-responsive.css" rel="stylesheet" type="text/css" />
+<script src="http://twitter.github.com/bootstrap/assets/js/bootstrap.js"></script>
+<meta charset=utf-8 />
+<title>JS Bin</title>
+</head>
 <body>
 
     <div>
@@ -44,25 +16,23 @@
 
 				<div class="page-header">
 
-					<h1>Other Services</h1>
+					<h1>Sidebar Accordion </h1>
                     <div class="container-fluid"> 
 				
                     <div class="row-fluid">
                    
                         <div class="span2">
-                            <!--Sidebar content-->
+                            
                             <ul class="nav nav-list bs-docs-sidenav">
-                                <!--<li class="nav-header">
-									Services Menu
-								</li> -->
+                                
                                 <li>
-                                    <a href="#firstlink" id="first_link">Confidential Service</a>
+                                    <a href="#firstlink" id="first_link">Service1</a>
                                 </li>
                                 <li>
-                                    <a href="#secondlink" id="second_link">CaseManagers</a>
+                                    <a href="#secondlink" id="second_link">Service2</a>
                                 </li>
                                 <li>
-                                    <a href="#thirdlink" id="third_link">Getting a Quote</a>
+                                    <a href="#thirdlink" id="third_link">Service3</a>
                                 </li>
                             </ul>
                         </div>
@@ -71,10 +41,9 @@
                             <div id="accordion">
                                 <ul>
                                     <li id="first">
-                                        <!-- <h1>Confidential Service</h1>  -->
+                                        
                                         <p>
-                                           This line should not start with Bullet Mark. We pledge confidentiality because we know it is critical to you.		
-												To insure your confidentiality:
+                                           This is Service1:
                                         </p>
                                         <ul>
                                             <li>Bold Bulletin Points Line # 1.Line # 1.Line # 1.Line # 1.Line # 1.</li>
@@ -83,12 +52,9 @@
                                         </ul>
                                     </li>
                                     <li id="second">
-                                        <!-- <h1>CaseManagers </h1> -->
+                                        
                                         <p>
-                                            This line should not start with Bullet Mark.We are bla bla bla!	
-		               						We do bla bla bla bla bla .	
-		               						
-		               						We are bla bla!	
+                                           This is service2
                                         </p>
                                         <ul>
                                             <li>Bold Bulletin Points Line # 1.Line # 1.Line # 1.Line # 1.Line # 1.</li>
@@ -108,9 +74,9 @@
                                         </p>
                                     </li>
                                     <li id="third">
-                                        <!-- <h1>Getting a Quote</h1> -->
+                                        
                                         <p>
-                                            Please fill the Enrollment form, our customer support representative will follow up with you.
+                                           This is service3
                                         </p>
                                     </li>
 
@@ -123,23 +89,116 @@
                     </div>                
 			</section>
 
+              <section>
+
+				<div class="page-header">
+
+					<h1>Collapsible accordion</h1>
+                    <div class="container-fluid"> 
+				              <table class="span10">
+                  <tr>
+                      <td>
+
+                          <div>
+              <div class="accordion" id="accordion2">
+                <div class="accordion-group">
+                  <div class="accordion-heading">
+                    <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapseOne">
+                      Service #1
+                    </a>
+                  </div>
+                  <div id="collapseOne" class="accordion-body collapse in">
+                    <div class="accordion-inner">
+                    
+                                        <p>
+                                            Testing the service # 1
+                                        </p>
+                                       
+                                    
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-group">
+                  <div class="accordion-heading">
+                    <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapseTwo">
+                      service # 2
+                    </a>
+                  </div>
+                  <div id="collapseTwo" class="accordion-body collapse">
+                    <div class="accordion-inner">
+                    
+                                        <p>
+                                           This is service2
+                                        </p>
+                                        <ul>
+                                            <li>Bold Bulletin Points Line # 1.Line # 1.Line # 1.Line # 1.Line # 1.</li>
+                                            <li>Bold Bulletin Points Line # 2.Line # 2.Line # 2.Line # 2.Line # 2.Line # 2.Line # 2.</li>
+                                            <li>Bold Bulletin Points Line # 3.Line # 3.Line # 3.Line # 3.Line # 3.Line # 3.Line # 3.Line # 3.Line # 3.</li>
+                                        </ul>
+                                        <p>
+                                            All that we do achieves multiple goals:	
+                                        </p>
+                                        <ul>
+                                            <li>Higher adherence levels for our patients.</li>
+                                            <li>Less work for case managers.</li>
+                                        </ul>
+                                        <p>
+                                            This line should not start with Bullet Mark.We are bla bla bla!	
+		               						We do bla bla bla bla bla .	
+                                        </p>
+
+
+                     
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-group">
+                  <div class="accordion-heading">
+                    <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapseThree">
+                      Service # 3
+                    </a>
+                  </div>
+                  <div id="collapseThree" class="accordion-body collapse">
+                    <div class="accordion-inner">
+                        
+                                 <p>
+                                           This is service3
+                                        </p>
+                           
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+                      </td>
+
+                  </tr>
+
+              </table>
+                    <div class="row-fluid">
+                   
+                        </div>
+                        </div>
+              </div>
+                    </section>
 
     </div>
     
     		<!-- Placed at the end of the document so the pages load faster -->
-		<script src="js/jquery.js"></script>
-		<script src="js/bootstrap-transition.js"></script>
-		<script src="js/bootstrap-alert.js"></script>
-		<script src="js/bootstrap-modal.js"></script>
-		<script src="js/bootstrap-dropdown.js"></script>
-		<script src="js/bootstrap-scrollspy.js"></script>
-		<script src="js/bootstrap-tab.js"></script>
-		<script src="js/bootstrap-tooltip.js"></script>
-		<script src="js/bootstrap-popover.js"></script>
-		<script src="js/bootstrap-button.js"></script>
-		<script src="js/bootstrap-collapse.js"></script>
-		<script src="js/bootstrap-carousel.js"></script>
-		<script src="js/bootstrap-typeahead.js"></script>
+		<script src="http://twitter.github.com/bootstrap/assets/js/jquery.js"></script>
+		<script src="http://twitter.github.com/bootstrap/assets/js/bootstrap-transition.js"></script>
+		<script src="http://twitter.github.com/bootstrap/assets/js/bootstrap-alert.js"></script>
+		<script src="http://twitter.github.com/bootstrap/assets/js/bootstrap-modal.js"></script>
+		<script src="http://twitter.github.com/bootstrap/assets/js/bootstrap-dropdown.js"></script>
+		<script src="http://twitter.github.com/bootstrap/assets/js/bootstrap-scrollspy.js"></script>
+		<script src="http://twitter.github.com/bootstrap/assets/js/bootstrap-tab.js"></script>
+		<script src="http://twitter.github.com/bootstrap/assets/js/bootstrap-tooltip.js"></script>
+		<script src="http://twitter.github.com/bootstrap/assets/js/bootstrap-popover.js"></script>
+		<script src="http://twitter.github.com/bootstrap/assets/js/bootstrap-button.js"></script>
+		<script src="http://twitter.github.com/bootstrap/assets/js/bootstrap-collapse.js"></script>
+		
+		<script src="http://twitter.github.com/bootstrap/assets/js/bootstrap-typeahead.js"></script>
 
 		<!--
 		<link type="text/css" href="css/ui-lightness/jquery-ui-1.8.23.custom.css" rel="Stylesheet" />
