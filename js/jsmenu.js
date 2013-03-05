@@ -1,6 +1,7 @@
 /**
- * @author Isuru
- */
+ * @author Chokka
+*/
+
 $(document).ready(function() {
 
 	
